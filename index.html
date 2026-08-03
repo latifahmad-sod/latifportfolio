@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>sahibzada latif's about info</title>
+
+    <style>
+        h1{
+            text-align: center;
+        }
+
+        body{
+            background: purple;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Center all buttons container */
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 20px 0;
+            width: 100%;
+        }
+
+        /* Make buttons responsive */
+        .button-container a {
+            flex: 0 1 auto;
+            min-width: auto;
+        }
+
+        .button-container button {
+            width: auto;
+            white-space: nowrap;
+        }
+
+        /* Responsive for mobile */
+        @media screen and (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            .button-container {
+                gap: 12px;
+            }
+            
+            .button-container button {
+                padding: 12px 25px !important;
+                font-size: 15px !important;
+                gap: 8px !important;
+            }
+            
+            .button-container svg {
+                width: 18px !important;
+                height: 18px !important;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .button-container {
+                gap: 10px;
+            }
+            
+            .button-container button {
+                padding: 10px 20px !important;
+                font-size: 13px !important;
+                gap: 6px !important;
+            }
+            
+            .button-container svg {
+                width: 16px !important;
+                height: 16px !important;
+            }
+        }
+
+        button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 8px 40px rgba(124, 58, 237, 0.4);
+            border-color: rgba(124, 58, 237, 0.8);
+        }
+
+        button:hover span:last-child {
+            opacity: 1;
+        }
+
+        button:hover svg {
+            animation: spin 0.5s ease;
+        }
+
+        @keyframes glow {
+            0%, 100% { transform: translate(0, 0); }
+            50% { transform: translate(10%, 10%); }
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div style="display: flex; 
+            align-items: center; 
+            gap: 25px;
+            padding: 20px 35px;
+            background: #1a1a2e;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(142, 68, 173, 0.3);
+            margin: 20px 0;
+            border: 1px solid rgba(142, 68, 173, 0.3);
+            flex-wrap: wrap;
+            justify-content: center;">
+    
+    <img src="111.png" alt="Logo" 
+         style="width: 75px; 
+                height: 75px; 
+                border-radius: 50%;
+                object-fit: cover;
+                border: 3px solid #8e44ad;
+                box-shadow: 0 0 30px rgba(142, 68, 173, 0.5);
+                transition: 0.4s;">
+    
+    <div style="text-align: center;">
+        <h2 style="margin: 0; color: #fff; font-family: Arial; text-shadow: 0 0 20px rgba(142, 68, 173, 0.5);">LATIF AHMAD</h2>
+        <p style="margin: 5px 0 0 0; color: #8e44ad; font-family: Arial; font-weight: bold;">WEB DESIGNED BY LATIF AHMAD</p>
+    </div>
+</div>
+
+<h1 style="margin: 5px 0 0 0; color: white; font-family: Arial; font-weight: bold;">ABOUT LATIF AHMAD</h1>
+
+<!-- Clean About Me -->
+<div style="background: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 30px rgba(0,0,0,0.08);
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+            font-family: Arial, sans-serif;">
+    
+    <div style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap; justify-content: center;">
+        <div style="font-size: 60px;">👋</div>
+        <div style="text-align: center;">
+            <h2 style="margin: 0; color: #2c3e50; font-size: 28px;">Latif Ahmad</h2>
+            <p style="margin: 5px 0 0 0; color: #667eea; font-weight: bold; font-size: 16px;">
+                Web Developer & Graphic Designer
+            </p>
+            <p style="margin: 3px 0 0 0; color: #7f8c8d; font-size: 14px;">
+                📍 Swat, Pakistan • 🎂 16 Years Old
+            </p>
+        </div>
+    </div>
+    
+    <p style="margin-top: 20px; color: #555; line-height: 1.8; font-size: 15px; padding-top: 20px; border-top: 2px solid #ecf0f1; text-align: center;">
+        Hi! I'm <strong>Latif Ahmad</strong>, a citizen of <strong>Swat, Pakistan</strong> and 
+        <strong>Graphic Designer</strong> from <strong>Swat, Pakistan</strong>. 
+       <strong>You can approach me through the following buttons of my social media accounts</strong>, 
+    </p>
+</div>
+
+<!-- BUTTONS CONTAINER - CENTERED -->
+<div class="button-container">
+    
+    <!-- TikTok Button -->
+    <a href="https://www.tiktok.com/@sahibzada_x.latif" target="_blank" 
+       style="text-decoration: none; display: inline-block;">
+        <button style="background: linear-gradient(135deg, #1a1a3e, #2c1b4d);
+                       color: white;
+                       padding: 14px 40px;
+                       border: 2px solid rgba(124, 58, 237, 0.4);
+                       border-radius: 50px;
+                       font-size: 18px;
+                       font-weight: 700;
+                       font-family: 'Segoe UI', Arial, sans-serif;
+                       cursor: pointer;
+                       display: inline-flex;
+                       align-items: center;
+                       gap: 12px;
+                       box-shadow: 0 0 30px rgba(124, 58, 237, 0.2);
+                       transition: all 0.3s ease;
+                       position: relative;
+                       overflow: hidden;">
+            
+            <!-- Purple Glow Effect -->
+            <span style="position: absolute;
+                         top: -50%;
+                         left: -50%;
+                         width: 200%;
+                         height: 200%;
+                         background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+                         animation: glow 3s ease-in-out infinite;"></span>
+            
+            <!-- TikTok Icon -->
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white" style="position: relative; z-index: 1;">
+                <path d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54.02h-3.09v14.92a3.23 3.23 0 0 1-3.25 3.23 3.23 3.23 0 0 1-3.25-3.23 3.23 3.23 0 0 1 3.25-3.23c.42 0 .82.08 1.19.23V8.58a6.32 6.32 0 0 0-1.19-.06A6.43 6.43 0 0 0 6.58 14.8a6.43 6.43 0 0 0 3.84 5.95 6.43 6.43 0 0 0 6.14-.48 6.38 6.38 0 0 0 2.5-4.82V8.88c.74.53 1.64.84 2.6.93v-3.1a4.27 4.27 0 0 1-4.06-1.81z"/>
+            </svg>
+            
+            <!-- Button Text -->
+            <span style="position: relative; z-index: 1; letter-spacing: 1px;">My TikTok</span>
+            
+            <!-- Hover Glow -->
+            <span style="position: absolute;
+                         inset: 0;
+                         background: linear-gradient(135deg, #7c3aed, #4c1d95);
+                         opacity: 0;
+                         transition: all 0.4s ease;
+                         border-radius: 50px;"></span>
+        </button>
+    </a>
+    
+    <!-- YouTube Button -->
+    <a href="https://www.youtube.com/@LatifAhmad-2310" target="_blank" 
+       style="text-decoration: none; display: inline-block;">
+        <button style="background: linear-gradient(135deg, #1a1a3e, #2c1b4d);
+                       color: white;
+                       padding: 14px 40px;
+                       border: 2px solid rgba(124, 58, 237, 0.4);
+                       border-radius: 50px;
+                       font-size: 18px;
+                       font-weight: 700;
+                       font-family: 'Segoe UI', Arial, sans-serif;
+                       cursor: pointer;
+                       display: inline-flex;
+                       align-items: center;
+                       gap: 12px;
+                       box-shadow: 0 0 30px rgba(124, 58, 237, 0.2);
+                       transition: all 0.3s ease;
+                       position: relative;
+                       overflow: hidden;">
+            
+            <!-- Purple Glow Effect -->
+            <span style="position: absolute;
+                         top: -50%;
+                         left: -50%;
+                         width: 200%;
+                         height: 200%;
+                         background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+                         animation: glow 3s ease-in-out infinite;"></span>
+            
+            <!-- YouTube Icon -->
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white" style="position: relative; z-index: 1;">
+                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            
+            <!-- Button Text -->
+            <span style="position: relative; z-index: 1; letter-spacing: 1px;">My YouTube</span>
+            
+            <!-- Hover Glow -->
+            <span style="position: absolute;
+                         inset: 0;
+                         background: linear-gradient(135deg, #ff0000, #cc0000);
+                         opacity: 0;
+                         transition: all 0.4s ease;
+                         border-radius: 50px;"></span>
+        </button>
+    </a>
+    
+    <!-- Facebook Button -->
+    <a href="facebook.html" target="_blank" 
+       style="text-decoration: none; display: inline-block;">
+        <button style="background: linear-gradient(135deg, #1a1a3e, #2c1b4d);
+                       color: white;
+                       padding: 14px 40px;
+                       border: 2px solid rgba(124, 58, 237, 0.4);
+                       border-radius: 50px;
+                       font-size: 18px;
+                       font-weight: 700;
+                       font-family: 'Segoe UI', Arial, sans-serif;
+                       cursor: pointer;
+                       display: inline-flex;
+                       align-items: center;
+                       justify-content: center;
+                       gap: 12px;
+                       box-shadow: 0 0 30px rgba(124, 58, 237, 0.2);
+                       transition: all 0.3s ease;
+                       position: relative;
+                       overflow: hidden;">
+            
+            <!-- Purple Glow Effect -->
+            <span style="position: absolute;
+                         top: -50%;
+                         left: -50%;
+                         width: 200%;
+                         height: 200%;
+                         background: radial-gradient(circle, rgba(124, 58, 237, 0.1) 0%, transparent 70%);
+                         animation: glow 3s ease-in-out infinite;"></span>
+            
+            <!-- Facebook Icon -->
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="white" style="position: relative; z-index: 1;">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+            </svg>
+            
+            <!-- Button Text -->
+            <span style="position: relative; z-index: 1; letter-spacing: 1px;">MY FACEBOOK</span>
+            
+            <!-- Hover Glow -->
+            <span style="position: absolute;
+                         inset: 0;
+                         background: linear-gradient(135deg, #7c3aed, #4c1d95);
+                         opacity: 0;
+                         transition: all 0.4s ease;
+                         border-radius: 50px;"></span>
+        </button>
+    </a>
+    
+</div>
+
+</body>
+</html>
