@@ -140,6 +140,554 @@
   });
 </script>
 
+/* Container for centering */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 10vh; /* Full viewport height - remove if not needed */
+  }
+
+  .animated-btn {
+    background-color: #1a237e; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.4);
+  }
+
+  /* Hover effect */
+  .animated-btn:hover {
+    background-color: #0d1555;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.6);
+  }
+
+  /* Active (click) effect */
+  .animated-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Ripple animation container */
+  .animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .animated-btn:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Pulse animation (runs continuously) */
+  .animated-btn.pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 35, 126, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0);
+    }
+  }
+
+  /* Bounce animation for JavaScript trigger */
+  .bounce-animation {
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<!-- Center the button -->
+<div class="button-container">
+  <button class="animated-btn pulse" onclick="location.href='id.pdf'" >ID CARD DESIGN</button>
+</div>
+
+<script>
+  // JavaScript animation - adds a scale bounce on click
+  document.querySelector('.animated-btn').addEventListener('click', function(e) {
+    // Remove existing animation class to restart it
+    this.classList.remove('bounce-animation');
+    
+    // Force reflow
+    void this.offsetWidth;
+    
+    // Add animation class
+    this.classList.add('bounce-animation');
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+      this.classList.remove('bounce-animation');
+    }, 600);
+  });
+</script>
+
+/* Container for centering */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 10vh; /* Full viewport height - remove if not needed */
+  }
+
+  .animated-btn {
+    background-color: #1a237e; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.4);
+  }
+
+  /* Hover effect */
+  .animated-btn:hover {
+    background-color: #0d1555;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.6);
+  }
+
+  /* Active (click) effect */
+  .animated-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Ripple animation container */
+  .animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .animated-btn:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Pulse animation (runs continuously) */
+  .animated-btn.pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 35, 126, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0);
+    }
+  }
+
+  /* Bounce animation for JavaScript trigger */
+  .bounce-animation {
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<!-- Center the button -->
+<div class="button-container">
+  <button class="animated-btn pulse" onclick="location.href='poster.pdf'" >POSTER DESIGN</button>
+</div>
+
+<script>
+  // JavaScript animation - adds a scale bounce on click
+  document.querySelector('.animated-btn').addEventListener('click', function(e) {
+    // Remove existing animation class to restart it
+    this.classList.remove('bounce-animation');
+    
+    // Force reflow
+    void this.offsetWidth;
+    
+    // Add animation class
+    this.classList.add('bounce-animation');
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+      this.classList.remove('bounce-animation');
+    }, 600);
+  });
+</script>
+/* Container for centering */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 10vh; /* Full viewport height - remove if not needed */
+  }
+
+  .animated-btn {
+    background-color: #1a237e; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.4);
+  }
+
+  /* Hover effect */
+  .animated-btn:hover {
+    background-color: #0d1555;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.6);
+  }
+
+  /* Active (click) effect */
+  .animated-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Ripple animation container */
+  .animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .animated-btn:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Pulse animation (runs continuously) */
+  .animated-btn.pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 35, 126, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0);
+    }
+  }
+
+  /* Bounce animation for JavaScript trigger */
+  .bounce-animation {
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<!-- Center the button -->
+<div class="button-container">
+  <button class="animated-btn pulse" onclick="location.href='wedcard.pdf'" >WEDDING CARD DESIGN</button>
+</div>
+
+<script>
+  // JavaScript animation - adds a scale bounce on click
+  document.querySelector('.animated-btn').addEventListener('click', function(e) {
+    // Remove existing animation class to restart it
+    this.classList.remove('bounce-animation');
+    
+    // Force reflow
+    void this.offsetWidth;
+    
+    // Add animation class
+    this.classList.add('bounce-animation');
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+      this.classList.remove('bounce-animation');
+    }, 600);
+  });
+</script>
+
+	/* Container for centering */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 10vh; /* Full viewport height - remove if not needed */
+  }
+
+  .animated-btn {
+    background-color: #1a237e; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.4);
+  }
+
+  /* Hover effect */
+  .animated-btn:hover {
+    background-color: #0d1555;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.6);
+  }
+
+  /* Active (click) effect */
+  .animated-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Ripple animation container */
+  .animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .animated-btn:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Pulse animation (runs continuously) */
+  .animated-btn.pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 35, 126, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0);
+    }
+  }
+
+  /* Bounce animation for JavaScript trigger */
+  .bounce-animation {
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<!-- Center the button -->
+<div class="button-container">
+  <button class="animated-btn pulse" onclick="location.href='file.pdf'" >HOSPITAL FILE TEMPELATE</button>
+</div>
+
+<script>
+  // JavaScript animation - adds a scale bounce on click
+  document.querySelector('.animated-btn').addEventListener('click', function(e) {
+    // Remove existing animation class to restart it
+    this.classList.remove('bounce-animation');
+    
+    // Force reflow
+    void this.offsetWidth;
+    
+    // Add animation class
+    this.classList.add('bounce-animation');
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+      this.classList.remove('bounce-animation');
+    }, 600);
+  });
+</script>
+
+	/* Container for centering */
+  .button-container {
+    display: flex;
+    justify-content: center;
+    
+    min-height: 10vh; /* Full viewport height - remove if not needed */
+  }
+
+  .animated-btn {
+    background-color: #1a237e; /* Dark blue */
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 35, 126, 0.4);
+  }
+
+  /* Hover effect */
+  .animated-btn:hover {
+    background-color: #0d1555;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(26, 35, 126, 0.6);
+  }
+
+  /* Active (click) effect */
+  .animated-btn:active {
+    transform: scale(0.95);
+  }
+
+  /* Ripple animation container */
+  .animated-btn::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+  }
+
+  .animated-btn:active::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  /* Pulse animation (runs continuously) */
+  .animated-btn.pulse {
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 15px rgba(26, 35, 126, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(26, 35, 126, 0);
+    }
+  }
+
+  /* Bounce animation for JavaScript trigger */
+  .bounce-animation {
+    animation: bounce 0.6s ease;
+  }
+
+  @keyframes bounce {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.2); }
+    50% { transform: scale(0.9); }
+    70% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+</style>
+
+<!-- Center the button -->
+<div class="button-container">
+  <button class="animated-btn pulse" onclick="location.href='vcard.pdf'" >VISITING CARD DESIGN</button>
+</div>
+
+<script>
+  // JavaScript animation - adds a scale bounce on click
+  document.querySelector('.animated-btn').addEventListener('click', function(e) {
+    // Remove existing animation class to restart it
+    this.classList.remove('bounce-animation');
+    
+    // Force reflow
+    void this.offsetWidth;
+    
+    // Add animation class
+    this.classList.add('bounce-animation');
+    
+    // Remove class after animation completes
+    setTimeout(() => {
+      this.classList.remove('bounce-animation');
+    }, 600);
+  });
+</script>
+
+
+
+	
+
 
 
 
